@@ -19,7 +19,7 @@ Learning Notes 1
 - ![](https://img.shields.io/badge/%E4%BB%A3%E7%A0%81%E5%9D%97-code%20block-yellow)         
       行内代码：两个反引号中间加文字`comment`，多行代码：三个反引号加`enter`
 
-- ![](https:/img.shields.io/badge/%E8%84%9A%E6%B3%A8-footnote-yellow)         
+- ![](https://img.shields.io/badge/%E8%84%9A%E6%B3%A8-footnote-yellow)         
       格式为[ ^ 文字 ]
 
 - ![](https://img.shields.io/badge/%E6%96%9C%E4%BD%93-Italic-yellow)          
@@ -38,7 +38,7 @@ Learning Notes 1
       使用`< == > 文字 < == >`实现
   
 
-  ==**更多编辑语法参考**==：<https://www.cnblogs.com/hider/p/11614688.html>
+  **更多编辑语法参考**：<https://www.cnblogs.com/hider/p/11614688.html>
 
 ## **3. Git learning**
 
