@@ -42,4 +42,4 @@ Learning Notes 1
 
 ## **3. Git learning**
 
-- <font color=red> **超级新手教程**</font> ：<https://www.bilibili.com/video/BV1Xx411m7knfrom=search&seid=10735877532984460816>
+- <font color=red> **超级新手教程**</font> ：<https://www.bilibili.com/video/BV1Xx411m7kn?from=search&amp%3Bseid=6389569117278506429>
