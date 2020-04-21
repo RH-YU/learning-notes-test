@@ -13,13 +13,13 @@ Learning Notes 1
 - ![](https://img.shields.io/badge/%E6%8D%A2%E8%A1%8C-line%20break-yellow)   
       Markdown中采用多个空格`space`，Typora中使用回车`enter`
       
-- ![](https://https://img.shields.io/badge/%E6%A0%87%E9%A2%98-title-yellow)  
+- ![](https://img.shields.io/badge/%E6%A0%87%E9%A2%98-title-yellow)  
       一级标题用`#`，二级标题用`##`，以此内推，最多使用六级标题
 
-- ![](https://https://img.shields.io/badge/%E4%BB%A3%E7%A0%81%E5%9D%97-code%20block-yellow)         
+- ![](https://img.shields.io/badge/%E4%BB%A3%E7%A0%81%E5%9D%97-code%20block-yellow)         
       行内代码：两个反引号中间加文字`comment`，多行代码：三个反引号加`enter`
 
-- ![](https:/https://img.shields.io/badge/%E8%84%9A%E6%B3%A8-footnote-yellow)         
+- ![](https:/img.shields.io/badge/%E8%84%9A%E6%B3%A8-footnote-yellow)         
       格式为[ ^ 文字 ]
 
 - ![](https://img.shields.io/badge/%E6%96%9C%E4%BD%93-Italic-yellow)          
@@ -31,7 +31,7 @@ Learning Notes 1
 - ![](https://img.shields.io/badge/%E4%B8%8B%E5%88%92%E7%BA%BF-underline-yellow)      
       使用`< u > 文字 < / u >`实现
 
-- ![](https://img.shields.io/badge/%E4%B8%8A%E6%A0%87-Superscript-yellow)![](https://img.shields.io/badge/%E4%B8%8B%E6%A0%87-Subscript-yellow)       
+- ![](https://img.shields.io/badge/%E4%B8%8A%E6%A0%87-Superscript-yellow)&![](https://img.shields.io/badge/%E4%B8%8B%E6%A0%87-Subscript-yellow)       
       使用`< sub > 文字 < / sub >`实现上标；使用`< sup > 文字 < / sup >`实现下标
 
 - ![](https://img.shields.io/badge/%E9%AB%98%E4%BA%AE-highlight-yellow)         
