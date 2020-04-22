@@ -12,7 +12,7 @@ Learning Notes 1
 
 - ![](https://img.shields.io/badge/%E6%8D%A2%E8%A1%8C-line%20break-yellow)   
       Markdown中采用多个空格`space`，Typora中使用回车`enter`
-      
+  
 - ![](https://img.shields.io/badge/%E6%A0%87%E9%A2%98-title-yellow)  
       一级标题用`#`，二级标题用`##`，以此内推，最多使用六级标题
 
@@ -40,6 +40,6 @@ Learning Notes 1
 
   **更多编辑语法参考**：<https://www.cnblogs.com/hider/p/11614688.html>
 
-## **3. Git learning**
+## **3. Git Learning**
 
 - <font color=red> **超级新手教程**</font> ：<https://www.bilibili.com/video/BV1Xx411m7kn?from=search&amp%3Bseid=6389569117278506429>
