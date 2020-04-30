@@ -24,24 +24,25 @@
 <dt><tt>numb</tt> : int</dt>
 <dd>输出向量<b>Y</b>的精度，默认为<B>8</B>位</dd>
 </dl>
-
 <dl>
 <dt><tt>numstart</tt> : float</dt>
 <dd>从理想输出中取值表示输出向量<b>Y</b>的起始位，默认值为<b>12+log<sub>2</sub>(N)-8</b>，其中N为输入向量的列数</dd>
 </dl>
 
 
+
 #### Inputs
 
 <dl>
 <dt><tt>X</tt> : V1</dt>
-<dd>N列输入向量，单个阵列运算时N最大值为<B>320</B></dd>
+<dd>N列输入向量，单个阵列运算时<b>N</b>最大值为<B>320</B></dd>
 </dl>
 
 <dl>
 <dt><tt>A</tt> : M</dt>
-<dd>NxM输入矩阵，单个阵列运算时M最大值为<B>128</B></dd>
+<dd>NxM输入矩阵，单个阵列运算时<B>M</B>最大值为<B>128</B></dd>
 </dl>
+
 
 
 
@@ -161,7 +162,14 @@ Averagepool算子是以池化区域的平均值作为结果执行池化操作，
 
 ## <a name="Relu"></a><a name="Relu">**Relu**</a>
 
-Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个输出向量
+Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个输出向量，这里用`numbr`表示一次处理的向量的元素个数。
+
+#### Attributes
+
+<dl>
+<dt><tt>numbr</tt> : int</dt>
+<dd>默认值暂时未定（不太清楚relu单元电路的工作情况）</dd>
+</dl>
 
 
 
@@ -169,8 +177,9 @@ Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个
 
 <dl>
 <dt><tt>X</tt> : V</dt>
-<dd>输入向量，大小暂时未定</dd>
+<dd>输入向量</dd>
 </dl>
+
 
 
 
@@ -194,7 +203,14 @@ Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个
 
 ## <a name="Add (in tile)"></a><a name="Add (in tile)">**Add (in tile)**</a>
 
-Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个输出向量`Y`，满足等式`Y=X1+X2`，主要处理同一`tile`内部的加法运算
+Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个输出向量`Y`，满足等式`Y=X1+X2`，主要处理同一`tile`内部的加法运算，这里可使用`add_numb`来表示相加的向量的精度。
+
+#### Attributes
+
+<dl>
+<dt><tt>add_numb</tt> : int</dt>
+<dd>默认值为8，可定义</dd>
+</dl>
 
 
 
@@ -202,13 +218,14 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 
 <dl>
 <dt><tt>X1</tt> : V</dt>
-<dd>输入向量，大小暂时未定</dd>
+<dd>输入向量</dd>
 </dl>
 
 <dl>
 <dt><tt>X2</tt> : V</dt>
-<dd>输入向量，大小暂时未定</dd>
+<dd>输入向量</dd>
 </dl>
+
 
 
 #### Output
@@ -223,9 +240,10 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 #### Type Constraints
 
 <dl>
-<dt><tt>V</tt> : 向量(int8)</dt>
-<dd>限制向量中的所有元素都为8bit整数</dd>
+<dt><tt>V</tt> : 向量(int)</dt>
+<dd>限制向量中的所有元素都为整数类型</dd>
 </dl>
+
 
 
 
