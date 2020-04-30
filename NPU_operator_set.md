@@ -2,14 +2,14 @@
 
 * 目前适用于NPU的算子包括：
   
-  * <a href="#Abs">VMM</a>
-  * <a href="#Acos">Maxpool</a>
+  * <a href="#VMM">VMM</a>
+  * <a href="#Maxpool">Maxpool</a>
   
-  * <a href="#Acosh">Averagepool</a>
-  * <a href="#Add">Relu</a>
+  * <a href="#Averagepool">Averagepool</a>
+  * <a href="#Relu">Relu</a>
   
-  * <a href="#Add">Add (in tile)</a>
-  * <a href="#Add">Dimensional transformation</a>
+  * <a href="#Add (in tile)">Add (in tile)</a>
+  * <a href="#Dimensional transformation">Dimensional transformation</a>
 
 
 
@@ -70,15 +70,6 @@
 </dl>
 
 
-
-
-#### Examples
-
-<details>
-<summary>TBD</summary>
-
-​    
-
 ### <a name="Maxpool"></a><a name="Maxpool">**Maxpool**</a>
 
 Maxpool算子是以池化区域最大值作为结果执行池化操作，可以将一个输入张量X按池化区域的大小(kernel sizes)以及池化步长(stride sizes)找出每个池化区域内的最大值然后组合成一个新的张量Y。
@@ -117,13 +108,6 @@ Maxpool算子是以池化区域最大值作为结果执行池化操作，可以�
 <dt><tt>T</tt> : 张量(int8)</dt>
 <dd>限制张量中所有的元素都为8bit的整数</dd>
 </dl>
-
-
-
-#### Examples
-
-<details>
-<summary>TBD</summary>
 
 
 
@@ -168,14 +152,7 @@ Averagepool算子是以池化区域的平均值作为结果执行池化操作，
 
 
 
-#### Examples
-
-<details>
-<summary>TBD</summary>
-
-
-
-### <a name="Relu"></a><a name="Relu">**Relu**</a>
+### a name="Relu"></a><a name="Relu">**Relu**</a>
 
 Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个输出向量
 
@@ -202,12 +179,6 @@ Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个
 <dt><tt>V</tt> : 向量(int8)</dt>
 <dd>限制向量中的所有元素都为8bit整数</dd>
 </dl>
-
-
-#### Examples
-
-<details>
-<summary>TBD</summary>
 
 
 ### <a name="Add (in tile)"></a><a name="Add (in tile)">**Add (in tile)**</a>
@@ -243,12 +214,6 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 </dl>
 
 
-
-#### Examples
-
-<details>
-<summary>TBD</summary>
-
 ### <a name=" Dimensional transformation"></a><a name="Dimensional transformation">**Dimensional transformation**</a>
 
 Dimensional transformation算子可以将高维的输入张量`X`通过变化后产生一个低维的输出张量`Y`，主要是将输入的4维图像信息转化为2维的全连接层信息。
@@ -277,13 +242,6 @@ Dimensional transformation算子可以将高维的输入张量`X`通过变化后
 <dt><tt>T</tt> : 张量(int8)</dt>
 <dd>限制张量中的所有元素都为8bit整数</dd>
 </dl>
-
-
-
-#### Examples
-
-<details>
-<summary>TBD</summary>
 
 
 
