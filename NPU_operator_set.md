@@ -1,12 +1,15 @@
 # NPU Operator Set
 
 * 目前适用于NPU的算子包括：
+  
   * <a href="#Abs">VMM</a>
-* <a href="#Acos">Maxpool</a>
+  * <a href="#Acos">Maxpool</a>
+  
   * <a href="#Acosh">Averagepool</a>
-* <a href="#Add">Relu</a>
+  * <a href="#Add">Relu</a>
+  
   * <a href="#Add">Add (in tile)</a>
-* <a href="#Add">Dimensional transformation</a>
+  * <a href="#Add">Dimensional transformation</a>
 
 
 
