@@ -72,7 +72,7 @@
 
 
 
-## <a name="Maxpool"></a><a name="Maxpool">**Maxpool**</a>
+## <a name="Maxpool">**Maxpool**</a>
 
 Maxpool算子是以池化区域最大值作为结果执行池化操作，可以将一个输入张量X按池化区域的大小(kernel sizes)以及池化步长(stride sizes)找出每个池化区域内的最大值然后组合成一个新的张量Y。
 
@@ -115,7 +115,7 @@ Maxpool算子是以池化区域最大值作为结果执行池化操作，可以�
 
 
 
-## <a name="Averagepool"></a><a name="Averagepool">**Averagepool**</a>
+## <a name="Averagepool">**Averagepool**</a>
 
 Averagepool算子是以池化区域的平均值作为结果执行池化操作，可以将一个输入张量X按池化区域的大小(kernel sizes)以及池化步长(stride sizes)计算每个池化区域内的平均值然后组合成一个新的张量Y
 
@@ -158,7 +158,7 @@ Averagepool算子是以池化区域的平均值作为结果执行池化操作，
 
 
 
-## <a name="Relu"></a><a name="Relu">**Relu**</a>
+## <a name="Relu">**Relu**</a>
 
 Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个输出向量，这里用`numbr`表示一次处理的向量的元素个数。
 
@@ -197,7 +197,7 @@ Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个
 
 
 
-## <a name="Add (in tile)"></a><a name="Add (in tile)">**Add (in tile)**</a>
+## <a name="Add (in tile)">**Add (in tile)**</a>
 
 Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个输出向量`Y`，满足等式`Y=X1+X2`，主要处理同一`tile`内部的加法运算，这里可使用`add_numb`来表示相加的向量的精度。
 
@@ -207,8 +207,6 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 <dt><tt>add_numb</tt> : int</dt>
 <dd>默认值为8，可自定义</dd>
 </dl>
-
-
 
 
 #### Input
@@ -245,7 +243,7 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 
 
 
-## <a name=" Dimensional transformation"></a><a name="Dimensional transformation">**Dimensional transformation**</a>
+## <a name="Dimensional transformation">**Dimensional transformation**</a>
 
 Dimensional transformation算子可以将高维的输入张量`X`通过变化后产生一个低维的输出张量`Y`，主要是将输入的4维图像信息转化为2维的全连接层信息。
 
