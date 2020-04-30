@@ -44,8 +44,6 @@
 </dl>
 
 
-
-
 #### Outputs
 
 <dl>
@@ -181,8 +179,6 @@ Relu算子可以将一个输入向量通过Relu函数[y=max(0,x)]后产生一个
 </dl>
 
 
-
-
 #### Output
 
 <dl>
@@ -209,8 +205,9 @@ Add (in tile)算子可以将两个输入向量`X1`与`X2`相加后产生一个�
 
 <dl>
 <dt><tt>add_numb</tt> : int</dt>
-<dd>默认值为8，可定义</dd>
+<dd>默认值为8，可自定义</dd>
 </dl>
+
 
 
 
@@ -275,9 +272,10 @@ Dimensional transformation算子可以将高维的输入张量`X`通过变化后
 #### Type Constraints
 
 <dl>
-<dt><tt>T</tt> : 张量(int8)</dt>
-<dd>限制张量中的所有元素都为8bit整数</dd>
+<dt><tt>T</tt> : 张量(int)</dt>
+<dd>限制张量中的所有元素都为整型</dd>
 </dl>
+
 
 
 
