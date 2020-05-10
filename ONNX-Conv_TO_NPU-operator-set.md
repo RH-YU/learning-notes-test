@@ -20,26 +20,13 @@
 
      - 不存在`padding`的变化规律满足以下的等式：
 
-       
-     
-     $$
-     a=1+fix(i-1,(W-KW)/S+1)*S+fix(j-1,KW)\\
-   b=1+mod(i-1,(W-KW)/S+1)*S+mod(j-1,KW)
-     $$
-
-     ​       
+       ![](https://github.com/RH-YU/learning_notes_test/raw/master/formulaf.PNG)
      
      其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
      
-     - 存在padding的情况即在二维图像矩阵的周围进行补零操作，形成一个新的二维图像矩阵`x'(a,b)`，在新矩阵的基础上变化之后的二维图像矩阵可表示为`x'(i,j)`，且满足以下的规律：
+   - 存在padding的情况即在二维图像矩阵的周围进行补零操作，形成一个新的二维图像矩阵`x'(a,b)`，在新矩阵的基础上变化之后的二维图像矩阵可表示为`x'(i,j)`，且满足以下的规律：
        
-     
-       $$
-     a=1+fix(i-1,(W-KW+2*P)/S+1)*S+fix(j-1,KW)\\
-       b=1+mod(i-1,(W-KW+2*P)/S+1)*S+mod(j-1,KW)
-       $$
-     
-     
+     ![](https://github.com/RH-YU/learning_notes_test/raw/master/formulas.PNG)
      
      其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
      
