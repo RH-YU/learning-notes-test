@@ -20,22 +20,31 @@
 
      - 不存在`padding`的变化规律满足以下的等式：
 
+       
+     
      $$
      a=1+fix(i-1,(W-KW)/S+1)*S+fix(j-1,KW)\\
-     b=1+mod(i-1,(W-KW)/S+1)*S+mod(j-1,KW)
+   b=1+mod(i-1,(W-KW)/S+1)*S+mod(j-1,KW)
      $$
 
-     ​       其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
-
+     ​       
+     
+     其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
+     
      - 存在padding的情况即在二维图像矩阵的周围进行补零操作，形成一个新的二维图像矩阵`x'(a,b)`，在新矩阵的基础上变化之后的二维图像矩阵可表示为`x'(i,j)`，且满足以下的规律：
+       
+     
        $$
-       a=1+fix(i-1,(W-KW+2*P)/S+1)*S+fix(j-1,KW)\\
+     a=1+fix(i-1,(W-KW+2*P)/S+1)*S+fix(j-1,KW)\\
        b=1+mod(i-1,(W-KW+2*P)/S+1)*S+mod(j-1,KW)
        $$
-       其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
-
+     
+     
+     
+     其中`fix(x1,x2)`表示`x1`除以`x2`的商，`mod(x1,x2)`表示`x1`除以`x2`的余数。
+     
      下图给出了`P=0`，`S=1`的变化过程：
-
+     
      ![](https://github.com/RH-YU/learning_notes_test/raw/master/graph_transform.png)
 
 3. 将图片信息和卷积核进行变化之后，需将二维的图片信息变化为1维的输入向量，这里使用算子`dimtransform_1`执行此操作，主要是将`K×N`的矩阵按行划分为`K`个`1×N`的行向量，其中`K=[(W-KW+2P)/S+1]*[(H-KH+2P)/S+1]`。
